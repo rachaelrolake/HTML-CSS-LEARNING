@@ -1,0 +1,68 @@
+.image-corners {
+    width: 200px;
+    border-radius: 10px;
+}
+
+.image-square {
+    width: 200px;
+    object-position: center;
+    
+}
+
+.image-circle {
+    width: 200px;
+    height: 170px;
+    border-radius: 50%;
+    
+}
+
+.search-bar {
+    border-radius: 5px;
+    border-width: 1px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 7px;
+    font-size: 18px;
+    font-family: Arial;
+}
+
+.search-shadow {
+    border-radius: 12px;
+    border: none;
+    box-shadow: 7px 7px 7px rgb(0,0,0,0.4);
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 12px;
+    padding-right: 190px;
+    font-family: Arial;
+}
+
+.email {
+    font-family: Arial;
+    font-size: 13px;
+    margin-bottom: 0;
+}
+
+.linkedin {
+    margin-top: 5px;
+    padding-left: 10px;
+    padding-right: 100px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.agreement {
+    font-family: Arial;
+    font-size: 12px;
+}
+
+.linButton {
+    color: white;
+    background-color: rgb(103, 103, 194);
+    border: none;
+    border-radius: 18px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    padding-left: 82px;
+    padding-right: 82px;
+}

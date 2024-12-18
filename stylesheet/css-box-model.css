@@ -166,7 +166,8 @@
 }
 
 .subscribe-button {
-    background-color: rgb(200, 0, 0);
+    /* background-color: rgb(200, 0, 0); */
+    background-color: rgb(204, 0, 0);
     color: white;
     border: none;
     /* height: 36px;

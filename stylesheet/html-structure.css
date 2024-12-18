@@ -1,0 +1,15 @@
+.model {
+    font-size: 64px;
+    font-family: "Montserrat";
+    margin-bottom: 0;
+}
+
+.order {
+    font-family: "Montserrat";
+    font-size: 24px;
+    margin-top: 0;
+}
+
+.underline-text {
+    text-decoration: underline;
+}
