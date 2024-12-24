@@ -1,8 +1,86 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <title>learning HTML and CSS (13)</title>
+    <style>
+        .card {
+            box-shadow: 5px 5px 8px rgb(0, 0, 0, 0.5);
+            width: 275px;
+            padding-bottom: 15px;
+            border-color: rgb(216, 212, 212);
+            border-width: 1px;
+            border-style: solid;
+
+        }
+
+        .oliver {
+            font-weight: bold;
+            font-family: Arial;
+            margin-left: 7px;
+            margin-top: 7px;
+            margin-bottom: 4px;
+        }
+
+        .mutual {
+            color: gray;
+            margin-left: 7px;
+            font-family: Arial;
+            margin-top: 5px;
+        }
+
+        .addFriend {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 4px;
+            margin-left: 7px;
+            margin-bottom: 7px;
+        }
+
+        .cardin {
+            display: inline-block;
+            box-shadow: 5px 5px 4px rgb(0, 0, 0, 0.3);
+            /* width: 300px; */
+            padding-bottom: 15px;
+            border-color: rgb(216, 212, 212);
+            border-width: 1px;
+            border-style: solid;
+            vertical-align: top;
+            margin-left: 10px;
+        }
+
+        .mimii {
+            width: 276px;
+            height: 183px;
+        }
+
+
+
+        .imglinB {
+            display: inline-block;
+            width: 30px;
+            vertical-align: top;
+            margin-left: 6px;
+        }
+
+        .inlineB {
+            display: inline-block;
+            vertical-align: bottom;
+
+        }
+
+        .profile {
+            width: 30px;
+            border-radius: 50px;
+        }
+    </style>
 </head>
+
 <body>
     <!--10a. layout design-->
     <img src="images/10a.png" alt="layout">
@@ -10,11 +88,71 @@
     <!--10b. design layouy-->
     <img src="images/10b.png" alt="layout">
 
-   <!--10c. design layouy-->
-   <img src="images/10c.png" alt="layout">
+    <!--10c. design layouy-->
+    <img src="images/10c.png" alt="layout">
 
-   <!--extra. design layouy-->
-   <img src="images/extra practice.png" alt="extra practice layout">
+    <!--10d. design layouy-->
+    <img src="images/extra practice.png" alt="extra practice layout">
+
+    <!--10e. -->
+
+    <!--9g. -->
+    <div class="wrapinsh">
+        <div class="cardin">
+            <div class="image">
+                <img src="images/images (4).jpg" alt="">
+            </div>
+            <div class="textIMG">
+                <p class="oliver">Oliver</p>
+                <div class="imglinB">
+                    <img class="profile" src="channel-pictures/channel-2.jpeg" alt="channel-picture">
+                </div>
+                <div class="inlineB">
+                    <p class="mutual">2 mutual friends</p>
+                </div>
+                <div class="blk">
+                    <button class="addFriend">Add Friend</buttonn>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardin">
+            <div class="image">
+                <img src="images/images (3).jpg" alt="" class="mimii">
+            </div>
+            <div class="textIMG">
+                <p class="oliver">Mimi</p>
+                <div class="imglinB">
+                    <img class="profile" src="channel-pictures/channel-2.jpeg" alt="channel-picture">
+                </div>
+                <div class="inlineB">
+                    <p class="mutual">3 mutual friends</p>
+                </div>
+                <div class="blk">
+                    <button class="addFriend">Add Friend</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="cardin">
+            <div class="image">
+                <img src="images/images (2).jpg" alt="">
+            </div>
+            <div class="textIMG">
+                <p class="oliver">Rex</p>
+                <div class="imglinB">
+                    <img class="profile" src="channel-pictures/channel-2.jpeg" alt="channel-picture">
+                </div>
+                <div class="inlineB">
+                    <p class="mutual">4 mutual friends</p>
+                </div>
+                <div class="blk">
+                    <button class="addFriend">Add Friend</button>
+                </div>
+            </div>
+        </div>
+    </div>
 
 </body>
+
 </html>
