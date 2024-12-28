@@ -2,8 +2,199 @@
 <html lang="en">
 <head>
     <title>learning HTML and CSS (14)</title>
+    <style>
+        .grid-contain{
+            display: grid;
+            grid-template-columns: 200px 75px;          
+        }
+
+        .grid-1a {
+            background-color: lightblue;
+        }
+
+        .grid-1b {
+            background-color: lightpink;
+        }
+
+        .grid-contain-three {
+            display: grid;
+            grid-template-columns: 50px 1fr 75px;
+        }
+
+        .col1 {
+            background-color: lightblue;
+        }
+
+        .col2 {
+            background-color: lightpink;
+        }
+
+        .col3 {
+            background-color: lightblue;
+        }
+
+        .col-contain {
+            display: grid;
+            grid-template-columns: 150px 150px 150px 150px;
+            column-gap: 20px;
+            row-gap: 10px;
+        }
+
+        .col-1 {
+            background-color: lightpink;
+        }
+
+        .cardin {
+            display: inline-block;
+            box-shadow: 5px 5px 4px rgb(0, 0, 0, 0.3);
+            /* width: 300px; */
+            padding-bottom: 15px;
+            border-color: rgb(216, 212, 212);
+            border-width: 1px;
+            border-style: solid;
+            vertical-align: top;
+            margin-left: 10px;
+        }
+
+        .oliver {
+            font-weight: bold;
+            font-family: Arial;
+            margin-left: 7px;
+            margin-top: 7px;
+            margin-bottom: 4px;
+        }
+
+        .img-line {
+            display: grid;
+            grid-template-columns: 30px 1fr; 
+        }
+
+        .addFriend {
+            background-color: blue;
+            color: white;
+            border: none;
+            padding-top: 9px;
+            padding-bottom: 9px;
+            padding-left: 15px;
+            padding-right: 15px;
+            border-radius: 4px;
+            margin-left: 3px;
+            margin-bottom: 7px;
+        }
+
+        .profile {
+            width: 30px;
+            border-radius: 50px;
+            margin-left: 3px;
+        }
+
+        .mutual {
+            color: gray;
+            margin-left: 5px;
+            font-family: Arial;
+            margin-top: 8px;
+        }
+
+        .mimii {
+            width: 276px;
+            height: 184px;
+            margin-bottom: 1px;
+        }
+
+    </style>
 </head>
 <body>
-    
+    <!--11a. grid with 2 columns-->
+    <div class="grid-contain">
+        <div class="grid-1a">200px</div>
+        <div class="grid-1b">75px</div>
+    </div>
+
+    <br>
+    <br>
+    <br> 
+    <br>
+    <br>
+    <br>
+
+    <div class="grid-contain-three">
+        <div class="col1">col1</div>
+        <div class="col2">col2</div>
+        <div class="col3">col3</div>
+    </div>
+
+    <br>
+    <br>
+    <br> 
+    <br>
+    <br>
+    <br>
+
+    <div class="col-contain">
+        <div class="col-1">col1</div>
+        <div class="col-1">col2</div>
+        <div class="col-1">col3</div>
+        <div class="col-1">col4</div>
+        <div class="col-1">col1</div>
+        <div class="col-1">col2</div>
+        <div class="col-1">col3</div>
+        <div class="col-1">col4</div>
+    </div>
+
+    <br>
+    <br>
+    <br> 
+    <br>
+    <br>
+    <br>
+
+    <div class="cardin">
+        <div class="image">
+            <img src="images/image1.jpg" alt="image-4">
+        </div>
+        <p class="oliver">Oliver</p>
+        <div class="img-line">
+            <div class="channel-picture">
+                <img class="profile" src="channel-pictures/channel-2.jpeg" alt="channel-picture">
+            </div>
+            <div class="video-info">
+                <p class="mutual">2 mutual friends</p>
+            </div>           
+        </div>
+        <button class="addFriend">Add Friend</buttonn>
+    </div>
+
+    <div class="cardin">
+        <div class="image">
+            <img src="images/image2.jpg" alt="image-4" class="mimii">
+        </div>
+        <p class="oliver">Mimi</p>
+        <div class="img-line">
+            <div class="channel-picture">
+                <img class="profile" src="channel-pictures/channel-2.jpeg" alt="channel-picture">
+            </div>
+            <div class="video-info">
+                <p class="mutual">3 mutual friends</p>
+            </div>           
+        </div>
+        <button class="addFriend">Add Friend</buttonn>
+    </div>
+
+    <div class="cardin">
+        <div class="image">
+            <img src="images/image3.jpg" alt="image-4">
+        </div>
+        <p class="oliver">Rex</p>
+        <div class="img-line">
+            <div class="channel-picture">
+                <img class="profile" src="channel-pictures/channel-2.jpeg" alt="channel-picture">
+            </div>
+            <div class="video-info">
+                <p class="mutual">4 mutual friends</p>
+            </div>           
+        </div>
+        <button class="addFriend">Add Friend</buttonn>
+    </div>
+
 </body>
 </html>
