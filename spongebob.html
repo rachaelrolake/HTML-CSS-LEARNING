@@ -1,0 +1,229 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>SpongeBob Head</title>
+  <style>
+    body {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      min-height: 100vh;
+      margin: 0;
+      background-color: #87CEEB;
+    }
+
+    .spongebob {
+      position: relative;
+      width: 200px;
+      height: 250px;
+      background: #FFEB3B;
+      border: 10px solid #FBC02D;
+      border-radius: 20px;
+      box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+    }
+
+    /* Eyes */
+    .eye {
+      position: absolute;
+      top: 50px;
+      width: 60px;
+      height: 60px;
+      background: white;
+      border: 5px solid #000;
+      border-radius: 50%;
+    }
+
+    .eye.left {
+      left: 30px;
+    }
+
+    .eye.right {
+      right: 30px;
+    }
+
+    .pupil {
+      position: absolute;
+      top: 15px;
+      left: 15px;
+      width: 30px;
+      height: 30px;
+      background: #0D47A1;
+      border-radius: 50%;
+    }
+
+    /* Eyelashes */
+    .eyelash {
+      position: absolute;
+      width: 5px;
+      height: 20px;
+      background: black;
+    }
+
+    .eye.left .eyelash {
+      top: -15px;
+    }
+
+    .eye.right .eyelash {
+      top: -15px;
+    }
+
+    .eye.left .eyelash:nth-child(1) {
+      left: 10px;
+      transform: rotate(-30deg);
+    }
+
+    .eye.left .eyelash:nth-child(2) {
+      left: 25px;
+      transform: rotate(0deg);
+    }
+
+    .eye.left .eyelash:nth-child(3) {
+      left: 40px;
+      transform: rotate(30deg);
+    }
+
+    .eye.right .eyelash:nth-child(1) {
+      left: 10px;
+      transform: rotate(-30deg);
+    }
+
+    .eye.right .eyelash:nth-child(2) {
+      left: 25px;
+      transform: rotate(0deg);
+    }
+
+    .eye.right .eyelash:nth-child(3) {
+      left: 40px;
+      transform: rotate(30deg);
+    }
+
+    /* Nose */
+    .nose {
+      position: absolute;
+      top: 100px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 20px;
+      height: 50px;
+      background: #FFEB3B;
+      border: 3px solid black;
+      border-radius: 10px;
+      transform-origin: top;
+    }
+
+    /* Freckles */
+    .freckle {
+      position: absolute;
+      width: 5px;
+      height: 5px;
+      background: black;
+      border-radius: 50%;
+    }
+
+    .freckle.left-1 {
+      top: 120px;
+      left: 20px;
+    }
+
+    .freckle.left-2 {
+      top: 135px;
+      left: 25px;
+    }
+
+    .freckle.left-3 {
+      top: 150px;
+      left: 20px;
+    }
+
+    .freckle.right-1 {
+      top: 120px;
+      right: 20px;
+    }
+
+    .freckle.right-2 {
+      top: 135px;
+      right: 25px;
+    }
+
+    .freckle.right-3 {
+      top: 150px;
+      right: 20px;
+    }
+
+    /* Mouth */
+    .mouth {
+      position: absolute;
+      bottom: 30px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 140px;
+      height: 60px;
+      background: #E53935;
+      border: 5px solid #000;
+      border-radius: 0 0 70px 70px;
+      overflow: hidden;
+    }
+
+    .tongue {
+      position: absolute;
+      bottom: 10px;
+      left: 50%;
+      transform: translateX(-50%);
+      width: 100px;
+      height: 40px;
+      background: #FF8A80;
+      border-radius: 50%;
+    }
+
+    /* Teeth */
+    .teeth {
+      position: absolute;
+      top: -10px;
+      left: 50%;
+      transform: translateX(-50%);
+      display: flex;
+      gap: 10px;
+    }
+
+    .tooth {
+      width: 30px;
+      height: 30px;
+      background: white;
+      border: 2px solid #0000;
+      border-radius: 0 0 5px 5px;
+    }
+  </style>
+</head>
+<body>
+  <div class="spongebob">
+    <div class="eye left">
+      <div class="eyelash"></div>
+      <div class="eyelash"></div>
+      <div class="eyelash"></div>
+      <div class="pupil"></div>
+    </div>
+    <div class="eye right">
+      <div class="eyelash"></div>
+      <div class="eyelash"></div>
+      <div class="eyelash"></div>
+      <div class="pupil"></div>
+    </div>
+    <div class="nose"></div>
+    <div class="freckle left-1"></div>
+    <div class="freckle left-2"></div>
+    <div class="freckle left-3"></div>
+    <div class="freckle right-1"></div>
+    <div class="freckle right-2"></div>
+    <div class="freckle right-3"></div>
+    <div class="mouth">
+      <div class="teeth">
+        <div class="tooth"></div>
+        <div class="tooth"></div>
+      </div>
+      <div class="tongue"></div>
+    </div>
+  </div>
+</body>
+</html>

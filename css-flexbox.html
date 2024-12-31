@@ -2,8 +2,384 @@
 <html lang="en">
 <head>
     <title>learning HTML and CSS (15)</title>
+    <style>
+        .flex-container {
+            display: flex;
+        }
+
+        .flex-contain1 {
+            background-color: lightblue;
+            width: 200px;
+        }
+
+        .flex-contain2 {
+            background-color: lightpink;
+            width: 75px;
+        }
+
+        .flex-contain {
+            display: flex;
+        }
+
+        .flex-container1 {
+            background-color: lightblue;
+            width: 50px;
+        }
+
+        .flex-container2 {
+            background-color: lightpink;
+            flex: 1;
+        }
+
+        .flex-container3 {
+            background-color: lightblue;
+            width: 75px;
+        }
+
+        .container-4items {
+            display: flex;
+            justify-content: space-between;
+        }
+
+        .items-even {
+            background-color: lightpink;
+        }
+
+        .flexbox {
+            display: flex;
+            border-color: gray;
+            border-width: 1px;
+            border-style: solid;
+            height: 50px;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .item-flex {
+            background-color: lightpink;
+        }
+
+        .container-info {
+            margin-bottom: 10px;
+        }
+
+        .info-container1 {
+            display: flex;
+        }
+
+        .info-item1a {
+            width: 350px;
+            font-family: Arial;
+        }
+
+        .info-item1b {
+            background-color: blue;
+            padding: 3px 9px;
+            border-radius: 11px;
+        }
+
+        .info-container2 {
+            display: flex;
+        }
+
+        .info-item2a {
+            width: 355px;
+            font-family: Arial;
+        }
+
+        .info-item2b {
+            background-color: blue;
+            padding: 3px 9px;
+            border-radius: 11px;
+        }
+
+        .info-container3 {
+            display: flex;
+        }
+
+        .info-item3a {
+            width: 355px;
+            font-family: Arial;
+        }
+
+        .info-item3b {
+            background-color: blue;
+            padding: 3px 9px;
+            border-radius: 11px;
+        }
+
+        .nav-bar {
+            background-color: rgb(175, 22, 175);
+            height: 75px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .nav-left {
+            color: white;
+            font-family: Arial;
+            margin-left: 10px;
+            font-size: 17px;
+            font-weight: 700;
+        }
+
+        .nav-middle {
+            margin-left: 70px;
+            margin-right: 35px;
+        }
+
+        .search-bar {
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 12px; 
+            padding-right: 500px;
+            flex: 1;
+            border-radius: 29px;
+            font-size: 17px;
+            border: 0;
+        } 
+        
+        .download-button {
+            background-color: transparent;
+            border-color: white;
+            border-style: solid;
+            border-width: 2px;
+            color: white;
+            margin-right: 10px;
+            font-size: 17px;
+            padding: 11px 20px;
+            font-family: Arial;
+        }
+
+        /*12g*/
+        .image-piw {
+            width: 70px;
+            height: 70px;
+            border-radius: 70px;
+        }
+
+        .design-follow {
+            margin-bottom: 25px;
+        }
+
+        .follow-container {
+            display: flex;
+            align-items: center;
+        }
+
+        .img-contain {
+            width: 85px;
+            margin-bottom: 23px;
+        }
+
+        .text-contain {
+            width: 250px;
+        }
+
+        .main-header-text, .main-header-text2 {
+            margin-top: 0;
+            margin-bottom: 8px;
+        }
+
+        .main-header-text3 {
+            margin-top: 0;
+        }
+
+        .main-header-text {
+            font-weight: 600;
+            font-family: Arial;
+        }
+
+        .main-header-text2, .main-header-text3 {
+            color: gray;
+            font-family: Arial;
+        }
+
+        .follow {
+            font-family: Arial;
+            font-size: 18px;
+            background-color: blue;
+            color: white;
+            border: none;
+            padding-top: 13px;
+            padding-bottom: 13px;
+            padding-left: 19px;
+            padding-right: 19px;
+            border-radius: 4px;
+            margin-left: 3px;
+            margin-bottom: 7px;
+        }
+
+
+    </style>
 </head>
 <body>
     
+     <!--12a. -->
+    <div class="flex-container">
+        <div class="flex-contain1">200px</div>
+        <div class="flex-contain2">75px</div>
+    </div>
+
+    <br>
+    <br>
+    <br> 
+    <br>
+    <br>
+    <br>
+
+     <!--12b. -->
+    <div class="flex-contain">
+        <div class="flex-container1">item1</div>
+        <div class="flex-container2">item2</div>
+        <div class="flex-container3">item3</div>
+    </div>
+
+    <br>
+    <br>
+    <br> 
+    <br>
+    <br>
+    <br>
+
+     <!--12c. -->
+    <div class="container-4items">
+        <div class="items-even">item1</div>
+        <div class="items-even">item2</div>
+        <div class="items-even">item3</div>
+        <div class="items-even">item4</div>
+    </div>
+
+    <br>
+    <br>
+    <br> 
+    <br>
+    <br>
+    <br>
+
+     <!--12d. -->
+    <div class="flexbox">
+        <div class="item-flex">item1</div>
+        <div class="item-flex">item2</div>
+    </div>
+
+    <br>
+    <br>
+    <br> 
+    <br>
+    <br>
+    <br>
+
+     <!--Challenge exercise -->
+      <!--12e. -->
+    <div class="container-info">
+        <div class="info-container1">
+            <div class="info-item1a">Home</div>
+            <div class="info-item1b">14</div>
+        </div>        
+    </div>
+
+    <div class="container-info">
+        <div class="info-container2">
+            <div class="info-item2a">Notifications</div>
+            <div class="info-item2b">3</div>
+        </div>        
+    </div>
+
+    <!--12f. -->
+    <div class="container-info">
+        <div class="info-container3">
+            <div class="info-item3a">Messages</div>
+            <div class="info-item3b">5</div>
+        </div>        
+    </div>
+
+    <br>
+    <br>
+    <br> 
+    <br>
+    <br>
+    <br>
+
+    <div class="nav-bar">
+        <div class="nav-left">Home</div>
+        <div class="nav-middle">
+            <input type="text" placeholder="Search" class="search-bar">
+        </div>
+        <div class="nav-right">
+            <button class="download-button">Download</button>
+        </div>
+    </div>
+
+    <br>
+    <br>
+    <br> 
+    <br>
+    <br>
+    <br>
+
+    <!--12g. -->
+   <div class="design-follow">
+        <div class="follow-container">
+            <div class="img-contain">
+                <img src="images/image1.jpg" alt="image" class="image-piw">
+            </div>
+
+            <div class="text-contain">
+                <p class="main-header-text">oliver</p>
+                <p class="main-header-text2">the cat</p>
+                <p class="main-header-text3">Popular</p>
+            </div>
+
+            <div class="button-end">
+                <button class="follow">
+                    Follow
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="design-follow">
+        <div class="follow-container">
+            <div class="img-contain">
+                <img src="images/image2.jpg" alt="image" class="image-piw">
+            </div>
+    
+            <div class="text-contain">
+                <p class="main-header-text">Mimi</p>
+                <p class="main-header-text2">Sleepy Cat</p>
+                <p class="main-header-text3">Popular</p>
+            </div>
+    
+            <div class="button-end">
+                <button class="follow">
+                    Follow
+                </button>
+            </div>
+        </div>
+    </div>
+
+    <div class="design-follow">
+        <div class="follow-container">
+            <div class="img-contain">
+                <img src="images/image3.jpg" alt="image" class="image-piw">
+            </div>
+    
+            <div class="text-contain">
+                <p class="main-header-text">Rex</p>
+                <p class="main-header-text2">Happy Bulldog</p>
+                <p class="main-header-text3">Popular</p>
+            </div>
+    
+            <div class="button-end">
+                <button class="follow">
+                    Follow
+                </button>
+            </div>
+        </div>
+    </div>
+
+   </div>
 </body>
 </html>
