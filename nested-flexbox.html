@@ -2,125 +2,7 @@
 <html lang="en">
 <head>
     <title>learning HTML and CSS (16)</title>
-    <style>
-        .flexbox {
-            display: flex;
-            height: 50px;
-        }
-
-        .flex-item1 {
-            background-color: lightpink;
-            width: 100px;
-            display: flex;
-            align-items: center;
-        }
-
-        .item {
-            background-color: black;
-            color: white;
-            margin-left: 27px;
-        }
-
-        .flex-item2 {
-            background-color: lightblue;
-            width: 200px;
-        }
-
-        .container {
-            display: flex;
-            height: 50px;
-        }
-
-        .flex-container1 {
-            background-color: lightpink;
-            width: 100px;
-        }
-
-        .flex-container2 {
-            background-color: lightblue;
-            width: 200px;
-            
-        }
-
-        .row2 {
-            display: flex;
-            align-items: center;
-            justify-content: space-between;
-        }
-
-        .contain1 {
-            background-color: black;
-            color: white;
-        }
-
-        .p-inbox {
-            color: gray;
-            margin-left: 15px;
-            font-family: Arial;
-        }
-
-        .gmail-ios {
-            border-width: 1px;
-            border-style: solid;
-            border-color: rgb(202, 200, 200);
-            box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.2),
-            -3px -3px 5px rgb(0, 0, 0, 0.2);
-        }
-
-        .info-container {
-            display: flex;
-            margin-top: 23px;
-            margin-left: 15px;
-        }
-
-        .image-piw {
-            width: 50px;
-            height: 50px;
-            border-radius: 25px;
-            margin-top: 9px;
-        }
-
-        .paragraph-text1, .paragraph-text2, .paragraph-text3 {
-            margin-top: 0;
-            margin-bottom: 5px;
-            font-family: Arial;
-        }
-
-        .paragraph-text1 {
-            font-size: 17px;
-            font-weight: 600;
-        }
-
-        .paragraph-text2 {
-            font-weight: 600;
-            font-size: 15px;
-        }
-
-        .paragraph-text3 {
-            color: gray;
-            font-size: 14px;
-        }
-
-        .text-container {
-            margin-left: 11px;
-        }
-
-        .time {
-            margin-left: -25px;
-            margin-top: -12px;
-        }
-
-        .timeUp {
-            margin-left: -22px;
-            margin-top: -12px;
-        }
-
-        .timeText {
-            color: gray;
-            font-size: 14px;
-        }
-
-    </style>
+    <link rel="stylesheet" href="stylesheet/nested-flexbox.css">
 </head>
 <body>
     <!--13a.-->
@@ -160,8 +42,11 @@
     <br>
     <br>
 
-    <!--13c-->
+    <!--13c.-->
     <!--Challenge exercises-->
+    <img src="images/13c.png" alt="image">
+    
+    <!--13d.-->
     <div class="gmail-ios">
         <div class="inboxes">
             <p class="p-inbox">
@@ -195,6 +80,7 @@
     <br>
     <br>
 
+    <!--13e.-->
     <div class="gmail-ios">
         <div class="inboxes">
             <p class="p-inbox">
@@ -264,8 +150,45 @@
     </div>
 
 
+    <!--13f.-->
+    <img src="images/13f.png" alt="image">
+
+    <!--13g.-->
+    <div class="13f-exercise">
+        <div class="13fBlock">
+           <div class="flex">
+                <div class="13f-thumnail">
+                    <img src="images/image1.jpg" alt="image" class="imagesh">
+                </div>
+                <div class="twitterInfo">
+                    <p class="tweet-head">supersimple.dev <span class="colour">@SuperSimpleDev</span> </p>
+                    <p class="twitter-text">What is backend web development? A complete overview. New video is up!</p>
+                </div>
+           </div>
+           <div class="youtube com">
+                <div class="flx">
+                    <div class="gray-cont"></div>
+                    <div class="yt-text">
+                        <p class="youtu">
+                            youtube.com
+                        </p>
+                        <p class="bckend">
+                            Backend web development - a complete overview (2021)
+                        </p>
+                    </div>
+                </div>
+           </div>
+        </div>
     </div>
 
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <br>
+    <!--link to go to the next page-->
+    <a href="css-position.html">Click to view next lesson</a>
 
 </body>
 </html>

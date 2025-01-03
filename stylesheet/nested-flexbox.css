@@ -1,0 +1,181 @@
+.flexbox {
+    display: flex;
+    height: 50px;
+}
+
+.flex-item1 {
+    background-color: lightpink;
+    width: 100px;
+    display: flex;
+    align-items: center;
+}
+
+.item {
+    background-color: black;
+    color: white;
+    margin-left: 27px;
+}
+
+.flex-item2 {
+    background-color: lightblue;
+    width: 200px;
+}
+
+.container {
+    display: flex;
+    height: 50px;
+}
+
+.flex-container1 {
+    background-color: lightpink;
+    width: 100px;
+}
+
+.flex-container2 {
+    background-color: lightblue;
+    width: 200px;
+    
+}
+
+.row2 {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.contain1 {
+    background-color: black;
+    color: white;
+}
+
+.p-inbox {
+    color: gray;
+    margin-left: 15px;
+    font-family: Arial;
+}
+
+.gmail-ios {
+    border-width: 1px;
+    border-style: solid;
+    border-color: rgb(202, 200, 200);
+    box-shadow: 3px 3px 5px rgb(0, 0, 0, 0.2),
+    -3px -3px 5px rgb(0, 0, 0, 0.2);
+    width: 450px;
+}
+
+.info-container {
+    display: flex;
+    margin-top: 23px;
+    margin-left: 15px;
+}
+
+.image-piw {
+    width: 50px;
+    height: 50px;
+    border-radius: 25px;
+    margin-top: 9px;
+}
+
+.paragraph-text1, .paragraph-text2, .paragraph-text3 {
+    margin-top: 0;
+    margin-bottom: 5px;
+    font-family: Arial;
+}
+
+.paragraph-text1 {
+    font-size: 17px;
+    font-weight: 600;
+}
+
+.paragraph-text2 {
+    font-weight: 600;
+    font-size: 15px;
+}
+
+.paragraph-text3 {
+    color: gray;
+    font-size: 14px;
+}
+
+.text-container {
+    margin-left: 11px;
+}
+
+.time {
+    margin-left: -25px;
+    margin-top: -12px;
+}
+
+.timeUp {
+    margin-left: -22px;
+    margin-top: -12px;
+}
+
+.timeText {
+    color: gray;
+    font-size: 14px;
+}
+
+.flex {
+    display: flex;
+    width: 400px;
+}
+
+.imagesh {
+    width: 70px;
+    height: 70px;
+    border-radius: 35px;
+    margin-top: 9px;
+}
+
+.tweet-head {
+    font-size: 17px;
+    font-family: Arial;
+    font-weight: 700;
+    margin-bottom: 0;
+}
+
+
+.colour {
+    color: gray;
+    font-weight: normal;
+}
+
+.twitter-text {
+    margin-top: 3px;
+    line-height: 20px;
+}
+
+.twitterInfo {
+    margin-left: 10px;
+}
+
+.flx {
+    display: flex;
+    border-width: 1px;
+    border-color: rgb(211, 208, 208);
+    border-style: solid;
+    border-radius: 17px;
+    width: 380px;
+    margin-left: 78px;
+}
+
+.gray-cont {
+    width: 100px;
+    height: 109px;
+    background-color: rgb(211, 208, 208);
+    border-radius: 17px 0px 0px 17px;
+    margin-right: 19px;
+}
+
+.youtu {
+    color: gray;
+    font-size: 16px;
+    font-family: Arial;
+    margin-bottom: 0;
+}
+
+.bckend {
+    width: 250px;
+
+}
