@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>learning HTML and CSS (17e)</title>
+    <style>
+        body {
+            height: 3000px;
+            background-color: lavender;
+            padding-top: 70px;
+        }
+
+        .header {
+            background-color: white;
+            display: flex;
+            padding-top: 10px;
+            padding-bottom: 10px;
+            padding-left: 60px;
+            padding-right: 60px;
+
+            position: fixed;
+            top: 0;
+            left: 0;
+            right: 0;
+
+        }
+
+        .icont1 {
+            display: flex;
+            flex: 1;
+        }
+
+        .icont2 {
+            display: flex;
+            width: 300px;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .image {
+            width: 50px;
+            height: 50px;
+            border-radius: 45px;
+            margin-right: 11px;
+        }
+
+        .paragraph {
+            font-weight: 600;
+            font-family: Arial;
+        }
+
+        .btn-style1, .btn-style2 {
+            padding: 7px 15px;
+            border: none;
+            border-radius: 5px;
+            font-size: 17px;
+        }
+
+        .btn-style1 {
+            
+            background-color: rgb(26, 26, 235);
+            
+            margin-right: 16px;
+            
+        }
+
+        .btn-style2 {
+            
+            background-color: rgb(241, 237, 237);
+           
+        }
+
+
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <div class="icont1">
+           <div class="imgCont">
+            <img src="images/image1.jpg" alt="image" class="image">
+           </div>
+            <div class="nameCont">
+                <p class="paragraph">Oliva Cat</p>
+            </div>
+        </div>
+        <div class="icont2">
+            <div class="addfrnd">
+                <button class="btn-style1"> Add Friend</button>
+            </div>
+            <div class="msg">
+                <button class="btn-style2">Message</button>
+            </div>
+        </div>
+    </div>
+
+     <!--link to go to the next page-->
+     <a href="css-position-6.html">Click to view exercise</a>
+</body>
+</html>

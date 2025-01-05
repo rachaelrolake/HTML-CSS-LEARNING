@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>learning HTML and CSS (17d)</title>
+    <style>
+        body {
+            height: 3000px;
+            font-family: Arial;
+        }
+
+        .modalCreation {
+            background-color: rgba(0, 0, 0, 0.8);
+            position: fixed;
+            top: 0;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .modalOverlay {
+            background-color: white;
+            box-shadow: inset 3px 3px 5px rgba(0, 0, 0, 0.3);
+            width: 500px;
+            height: 150px;
+            border-radius: 7px;
+            z-index: 1;
+        }
+
+        .modalText {
+            margin: 25px;   
+        }
+
+        .title {
+            font-weight: 600;
+            font-size: 27px;
+            margin-bottom: 0;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="modalCreation">
+        <div class="modalOverlay">
+            <div class="modalText">
+                <p class="title">
+                    Modal Title
+                </p>
+                <p class="moda">
+                    This is a modal
+                </p>
+                <button>
+                    Close
+                </button>
+                 <!--link to go to the next page-->
+        <a href="css-position-5.html">Click to view exercise</a>
+            </div>
+        </div>
+    </div>
+</body>
+</html>
