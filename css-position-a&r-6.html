@@ -1,11 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <title>learning HTML and CSS (18e)</title>
+    <title>learning HTML and CSS (18f)</title>
     <style>
         body {
             height: 3000px;
-        }
+        } 
 
         .imageContainer {
             position: relative;
@@ -21,15 +21,38 @@
             right: 0;
             top: 5px;
         }
+
+        .addToCart {
+            background-color: rgba(226, 226, 226, 0.911);
+            position: absolute;
+            top: 150px;
+            bottom: 3px;
+            left: 0;
+            right: 0;
+            z-index: 100;
+        }
+
+        button  {
+            position: relative;
+            left: 70px;
+            top: 30px;
+            font-family: Arial;
+        }
+
+        
+
     </style>
 </head>
 <body>
     <div class="imageContainer">
         <div class="amountOff">20% OFF</div>
         <img src="images/image-cloth.jpg" alt="cloth">
+        <div class="addToCart">
+            <button>Add to Cart</button>
+        </div>
+        
     </div>
          <!--link to go to the next page-->
-    <a href="css-position-a&r-6.html">Click to view exercise</a>
-    
+    <a href="css-position-a&r-7.html">Click to view exercise</a>
 </body>
 </html>
