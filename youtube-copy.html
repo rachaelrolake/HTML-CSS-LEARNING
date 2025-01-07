@@ -14,7 +14,9 @@
         body {
             margin: 0;
             padding-top: 80px;
-            padding-left: 80px;
+            padding-left: 96px;
+            padding-right: 24px;
+            background-color: rgb(248, 248, 248);
         }
 
         p {
@@ -92,12 +94,38 @@
             border-style: solid;
             border-color: rgb(192, 192, 192);
             margin-left: -1px;
-            margin-right: 10px;
+            margin-right: 10px;            
+        } 
+
+        .search-button, .voice-search-button, .upload-icon-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+        }
+
+        .search-button .tooltip, .voice-search-button .tooltip, .upload-icon-container .tooltip {
+            font-family: "Roboto", Arial;
+            position: absolute;
+            background-color: gray;
+            color: white;
+            padding: 4px 8px;
+            border-radius: 2px;
+            font-size: 12px;
+            bottom: -30px;
+            opacity: 0;
+            transition: opacity 0.15s;
+            pointer-events: none;
+            white-space: nowrap;
+        }     
+        
+        .search-button:hover .tooltip, .voice-search-button:hover .tooltip, .upload-icon-container:hover .tooltip {
+            opacity: 1;
+            
         }
 
         .search-icon{
             height: 25px;
-            margin-top: 4px;
         }
 
         .voice-search-button {
@@ -110,7 +138,6 @@
 
         .voice-search-icon {
             height: 24px;
-            margin-top: 4px;
         }
 
         .right-section {
@@ -165,7 +192,32 @@
             bottom: 0;
             top: 55px;
             background-color: white;
-            width: 80px;
+            width: 72px;
+            z-index: 200;
+            padding-top: 5px;
+        }
+
+        .sidebar-link {
+             height: 74px;
+             display: flex;
+             justify-content: center;
+             align-items: center;
+             flex-direction: column ;
+             cursor: pointer;
+        }
+
+        .sidebar-link:hover {
+            background-color: rgb(235, 235, 235);
+        }
+
+        .sidebar-link img {
+            height: 24px;
+            margin: 4px;
+        }
+
+        .sidebar-link div {
+            font-family: "Roboto", Arial;
+            font-size: 10px;
         }
 
         /*video style*/
@@ -178,7 +230,7 @@
             font-size: 14px;
             font-weight: 500;
             line-height: 20px;
-            margin-bottom: 12px;
+            margin-bottom: 10px; 
         } 
 
         /* .video-preview {
@@ -205,12 +257,12 @@
         } */
 
         .profile-picture {
-            width: 40px;
+            width: 36px;
             border-radius: 50px;
         }
 
         .thumbnail-row {
-            margin-bottom: 12px;
+            margin-bottom: 8px;
             position: relative;
         }
 
@@ -266,18 +318,22 @@
             <button class="search-button">
 
                 <img src="icons/search.svg" alt="search-icon" class="search-icon">
-
+                <div class="tooltip">Search</div>
             </button>
 
             <button class="voice-search-button">
 
                 <img src="icons/voice-search-icon.svg" alt="voice-search-icon" class="voice-search-icon">
-
+                <div class="tooltip">Search with your voice</div>
             </button>
 
         </div>
         <div class="right-section">
-            <img src="icons/upload.svg" alt="upload" class="upload-icon">
+            <div class="upload-icon-container">
+                <img src="icons/upload.svg" alt="upload" class="upload-icon">
+                <div class="tooltip">Create</div>
+            </div>
+            
             <img src="icons/youtube-apps.svg" alt="youtube-apps" class="youtube-apps-icon">
             <div class="notifications-icon-container">
                 <img src="icons/notifications.svg" alt="notifications" class="notifications-icon">
@@ -289,7 +345,30 @@
     </div>
 
     <div class="side-bar">
-        sidebar
+       <div class="sidebar-link">
+        <img src="icons/home.svg" alt="home">
+        <div c>Home</div>
+       </div>
+       <div class="sidebar-link">
+        <img src="icons/explore.svg" alt="explore">
+        <div>explore</div>
+       </div>
+       <div class="sidebar-link">
+        <img src="icons/subscriptions.svg" alt="subscriptions">
+        <div>subscriptions</div>
+       </div>
+       <div class="sidebar-link">
+        <img src="icons/originals.svg" alt="originals">
+        <div>originals</div>
+       </div>
+       <div class="sidebar-link">
+        <img src="icons/youtube-music.svg" alt="youtube-music">
+        <div>youtube-music</div>
+       </div>
+       <div class="sidebar-link">
+        <img src="icons/library.svg" alt="library">
+        <div>library</div>
+       </div>
     </div>
   
 
