@@ -86,8 +86,7 @@
         line-height: 24px;
     }
 
-    .video-author,
-    .video-stats {
+    .video-author, .video-stats {
         font-size: 14px;
     }
 }
