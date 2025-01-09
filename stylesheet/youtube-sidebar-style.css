@@ -1,32 +1,73 @@
-.side-bar {
-    position: fixed;
-    left: 0;
-    bottom: 0;
-    top: 55px;
-    background-color: white;
-    width: 72px;
-    z-index: 200;
-    padding-top: 5px;
+/*exercise17*/
+
+@media (max-width:1200px) {
+    .side-bar {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top: 55px;
+        background-color: white;
+        width: 72px;
+        z-index: 200;
+        padding-top: 5px;
+    }
+    
+    .sidebar-link {
+        height: 74px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        cursor: pointer;
+    }
+    
+    .sidebar-link:hover {
+        background-color: rgb(235, 235, 235);
+    }
+    
+    .sidebar-link img {
+        height: 24px;
+        margin: 4px;
+    }
+    
+    .sidebar-link div {
+        font-size: 10px;
+    }
 }
 
-.sidebar-link {
-     height: 74px;
-     display: flex;
-     justify-content: center;
-     align-items: center;
-     flex-direction: column ;
-     cursor: pointer;
-}
+@media (min-width: 1200.1px) {
+    .side-bar {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        top: 55px;
+        background-color: white;
+        width: 200px;
+        z-index: 200;
+        padding-top: 5px;
 
-.sidebar-link:hover {
-    background-color: rgb(235, 235, 235);
-}
+    }
 
-.sidebar-link img {
-    height: 24px;
-    margin: 4px;
-}
+    .sidebar-link {
+        height: 40px;
+        display: flex;
+        justify-content: start;
+        align-items: center;
+        flex-direction: row;
+        cursor: pointer;
+    }
 
-.sidebar-link div {
-    font-size: 10px;
+    .sidebar-link img {
+        height: 25px;
+        margin: 4px 20px 4px 15px;
+    }
+
+    .sidebar-link:hover {
+        background-color: rgb(235, 235, 235);
+    }
+
+    .sidebar-link div {
+        font-size: 13px;
+    }
+
 }
